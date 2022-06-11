@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+    <link rel="stylesheet" href="./Cronometro.css">
+</head>
+<body>
+    
+<div id="box">
+    <h1 id="watch">00:00:00</h1>
+
+    <div class="circle">
+        <div id="ball"></div>
+    </div>
+    <input type="button" class="btn" onclick="play()" id="play" value="Play">
+    <input type="button" class="btn" onclick="pause()" id="pause" value="Pause">
+    <input type="button" class="btn" onclick="stop()" id="stop" value="Stop">
+
+</div>
+
+<input class="time" type="number" placeholder="hr" id="h1">
+<input class="time" type="number" placeholder="min" id="m1">
+<input class="time" type="number" placeholder="seg" id="s1">
+
+<input type="button" id="start" onclick="start()" value="start">
+
+<p id="p" >Alarme</p>
+
+
+
+
+    <script src="./Cronometro.js"></script>
+</body>
+</html>
